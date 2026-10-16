@@ -50,6 +50,8 @@ Topaz Video를 다시 실행하고 영상을 불러온 뒤 **Codec settings**에
 | Profile | **4444** |
 | Container | **MOV** |
 
+![Topaz Video의 ProRes 4444 MOV 출력 설정](assets/topaz-prores4444-settings.png)
+
 모델과 출력 해상도를 설정한 후 **Export**를 실행합니다. 출력 해상도는 **Adjustments → Output resolution**에서 별도로 선택합니다.
 
 ## 적용되는 설정
