@@ -1,0 +1,34 @@
+{
+  "id": "prores-4444-rec709-win",
+  "encoder": "ProRes",
+  "profile": "4444 Rec.709",
+  "allowsAlpha": 0,
+  "ext": [
+    "mov"
+  ],
+  "os": "windows",
+  "minSize": [
+    2,
+    2
+  ],
+  "maxSize": [
+    16384,
+    16384
+  ],
+  "maxBitDepth": 10,
+  "doNotScaleFullColorRange": "transcode",
+  "encoderOpts": {
+    "profile:v": "4",
+    "vendor": "Lavc",
+    "alpha_bits": "0",
+    "color_range": "tv",
+    "color_primaries": "bt709",
+    "color_trc": "bt709",
+    "colorspace": "bt709",
+    "bsf:v": "prores_metadata=color_primaries=bt709:color_trc=bt709:colorspace=bt709",
+    "movflags": "+faststart+write_colr",
+    "tag:v": "ap4h"
+  },
+  "pixFmt": "yuv444p10le",
+  "encoderName": "prores_ks"
+}

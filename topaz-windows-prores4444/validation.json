@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "topaz_video_version": "1.7.1",
+  "ffmpeg_version": "Topaz bundled FFmpeg 8.1",
+  "encoder": "prores_ks",
+  "encoder_input_pix_fmt": "yuv444p10le",
+  "encoder_input_precision_bits": 10,
+  "output_profile": "4444",
+  "output_codec_tag": "ap4h",
+  "decoder_pix_fmt": "yuv444p12le",
+  "color_primaries": "bt709",
+  "color_transfer": "bt709",
+  "color_space": "bt709",
+  "color_range": "tv",
+  "prores_header_color_codes": [
+    1,
+    1,
+    1
+  ],
+  "mov_colr_codes": [
+    1,
+    1,
+    1
+  ],
+  "frames": 12,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": "24/1",
+  "alpha": false,
+  "input": "Rec.709 tagged synthetic test clip",
+  "note": "Exact JSON encoderOpts verified with bundled FFmpeg. Use correctly tagged Rec.709 SDR input; this profile does not convert HDR/log or repair missing source color metadata. Decoder 12-bit output does not mean 12-bit encoder input."
+}

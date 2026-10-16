@@ -1,0 +1,1652 @@
+[
+  {
+    "id": "prores-422-proxy-win",
+    "encoder": "ProRes",
+    "profile": "422 Proxy",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 10,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "profile:v": "0",
+      "vendor": "apl0",
+      "quant_mat": "lt",
+      "bits_per_mb": "525"
+    },
+    "pixFmt": "yuv422p10le",
+    "encoderName": "prores_ks"
+  },
+  {
+    "id": "prores-422-std-win",
+    "encoder": "ProRes",
+    "profile": "422 Std",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 10,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "profile:v": "2",
+      "vendor": "apl0",
+      "quant_mat": "hq",
+      "bits_per_mb": "1350"
+    },
+    "pixFmt": "yuv422p10le",
+    "encoderName": "prores_ks"
+  },
+  {
+    "id": "prores-422-lt-win",
+    "encoder": "ProRes",
+    "profile": "422 LT",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 10,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "profile:v": "1",
+      "vendor": "apl0",
+      "quant_mat": "lt",
+      "bits_per_mb": "525"
+    },
+    "pixFmt": "yuv422p10le",
+    "encoderName": "prores_ks"
+  },
+  {
+    "id": "prores-422-hq-win",
+    "encoder": "ProRes",
+    "profile": "422 HQ",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 10,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "profile:v": "3",
+      "vendor": "apl0",
+      "quant_mat": "hq",
+      "bits_per_mb": "1350"
+    },
+    "pixFmt": "yuv422p10le",
+    "encoderName": "prores_ks"
+  },
+  {
+    "id": "prores-4444-rec709-win",
+    "encoder": "ProRes",
+    "profile": "4444 Rec.709",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "windows",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      16384,
+      16384
+    ],
+    "maxBitDepth": 10,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "profile:v": "4",
+      "vendor": "Lavc",
+      "alpha_bits": "0",
+      "color_range": "tv",
+      "color_primaries": "bt709",
+      "color_trc": "bt709",
+      "colorspace": "bt709",
+      "bsf:v": "prores_metadata=color_primaries=bt709:color_trc=bt709:colorspace=bt709",
+      "movflags": "+faststart+write_colr",
+      "tag:v": "ap4h"
+    },
+    "pixFmt": "yuv444p10le",
+    "encoderName": "prores_ks"
+  },
+  {
+    "id": "prores-422-proxy-osx",
+    "encoder": "ProRes",
+    "profile": "422 Proxy",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "encoderOpts": {
+      "profile:v": "proxy",
+      "allow_sw": "1"
+    },
+    "pixFmt": "p210le",
+    "encoderName": "prores_videotoolbox"
+  },
+  {
+    "id": "prores-422-std-osx",
+    "encoder": "ProRes",
+    "profile": "422 Std",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "encoderOpts": {
+      "profile:v": "standard",
+      "allow_sw": "1"
+    },
+    "pixFmt": "p210le",
+    "encoderName": "prores_videotoolbox"
+  },
+  {
+    "id": "prores-422-lt-osx",
+    "encoder": "ProRes",
+    "profile": "422 LT",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "encoderOpts": {
+      "profile:v": "lt",
+      "allow_sw": "1"
+    },
+    "pixFmt": "p210le",
+    "encoderName": "prores_videotoolbox"
+  },
+  {
+    "id": "prores-422-hq-osx",
+    "encoder": "ProRes",
+    "profile": "422 HQ",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "encoderOpts": {
+      "profile:v": "hq",
+      "allow_sw": "1"
+    },
+    "pixFmt": "p210le",
+    "encoderName": "prores_videotoolbox"
+  },
+  {
+    "id": "prores-422-xq-osx",
+    "encoder": "ProRes",
+    "profile": "4444 XQ",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov"
+    ],
+    "os": "osx",
+    "osVersion": 12.0,
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "doNotScaleFullColorRange": "always",
+    "encoderOpts": {
+      "profile:v": "xq",
+      "color_range": "tv",
+      "allow_sw": "1"
+    },
+    "pixFmt": "p416le",
+    "encoderName": "prores_videotoolbox"
+  },
+  {
+    "id": "dnxhr-lb",
+    "encoder": "DNxHR",
+    "profile": "LB",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mxf"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 8,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "strict": "experimental",
+      "profile:v": "dnxhr_lb"
+    },
+    "pixFmt": "yuv422p",
+    "encoderName": "dnxhd"
+  },
+  {
+    "id": "dnxhr-sq",
+    "encoder": "DNxHR",
+    "profile": "SQ",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mxf"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 8,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "strict": "experimental",
+      "profile:v": "dnxhr_sq"
+    },
+    "pixFmt": "yuv422p",
+    "encoderName": "dnxhd"
+  },
+  {
+    "id": "dnxhr-hq",
+    "encoder": "DNxHR",
+    "profile": "HQ",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mxf"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 8,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "strict": "experimental",
+      "profile:v": "dnxhr_hq"
+    },
+    "pixFmt": "yuv422p",
+    "encoderName": "dnxhd"
+  },
+  {
+    "id": "dnxhr-hqx",
+    "encoder": "DNxHR",
+    "profile": "HQX",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mxf"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 12,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "strict": "experimental",
+      "profile:v": "dnxhr_hqx"
+    },
+    "pixFmt": "yuv422p10le",
+    "encoderName": "dnxhd"
+  },
+  {
+    "id": "dnxhr-444",
+    "encoder": "DNxHR",
+    "profile": "444",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mxf"
+    ],
+    "os": "windows|linux",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16386,
+      16386
+    ],
+    "maxBitDepth": 12,
+    "doNotScaleFullColorRange": "transcode",
+    "encoderOpts": {
+      "strict": "experimental",
+      "profile:v": "dnxhr_444"
+    },
+    "pixFmt": "yuv444p10le",
+    "encoderName": "dnxhd"
+  },
+  {
+    "id": "h264-high-osx-dynamic",
+    "encoder": "H264",
+    "profile": "High",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "bitrateOpts": {
+      "cbr": {
+        "b:v": "<CONST_BITRATE_VALUE>"
+      },
+      "vbr": {
+        "b:v": "0",
+        "q:v": "<QV_VALUE>"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        82
+      ],
+      "Mid": [
+        60
+      ],
+      "Low": [
+        50
+      ]
+    },
+    "gpu": "appleSilicon",
+    "autoBitsPerPixel": "1.0",
+    "maxBitRate": 2000,
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      7680,
+      4320
+    ],
+    "doNotScaleFullColorRange": "always",
+    "encoderOpts": {
+      "profile:v": "high",
+      "allow_sw": "1",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "h264_videotoolbox"
+  },
+  {
+    "id": "h264-high-osx",
+    "encoder": "H264",
+    "profile": "High",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "gpu": "appleIntel",
+    "autoBitsPerPixel": "1.0",
+    "maxBitRate": 2000,
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      7680,
+      4320
+    ],
+    "doNotScaleFullColorRange": "always",
+    "encoderOpts": {
+      "profile:v": "high",
+      "allow_sw": "1",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "h264_videotoolbox"
+  },
+  {
+    "id": "h265-main-osx-dynamic",
+    "encoder": "H265",
+    "profile": "Main",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "bitrateOpts": {
+      "cbr": {
+        "b:v": "<CONST_BITRATE_VALUE>"
+      },
+      "vbr": {
+        "b:v": "0",
+        "q:v": "<QV_VALUE>"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        82
+      ],
+      "Mid": [
+        60
+      ],
+      "Low": [
+        50
+      ]
+    },
+    "gpu": "appleSilicon",
+    "autoBitsPerPixel": "0.8",
+    "maxBitRate": 2000,
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "doNotScaleFullColorRange": "always",
+    "encoderOpts": {
+      "profile:v": "main",
+      "allow_sw": "1",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "hevc_videotoolbox",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h265-main-osx",
+    "encoder": "H265",
+    "profile": "Main",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "gpu": "appleIntel",
+    "autoBitsPerPixel": "0.8",
+    "maxBitRate": 2000,
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "doNotScaleFullColorRange": "always",
+    "encoderOpts": {
+      "profile:v": "main",
+      "allow_sw": "1",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "hevc_videotoolbox",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h265-main10-osx-dynamic",
+    "encoder": "H265",
+    "profile": "Main10",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "bitrateOpts": {
+      "cbr": {
+        "b:v": "<CONST_BITRATE_VALUE>"
+      },
+      "vbr": {
+        "b:v": "0",
+        "q:v": "<QV_VALUE>"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        82
+      ],
+      "Mid": [
+        60
+      ],
+      "Low": [
+        50
+      ]
+    },
+    "gpu": "appleSilicon",
+    "autoBitsPerPixel": "1.0",
+    "maxBitRate": 2000,
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "doNotScaleFullColorRange": "always",
+    "encoderOpts": {
+      "profile:v": "main10",
+      "allow_sw": "1",
+      "g": "30"
+    },
+    "pixFmt": "p010le",
+    "encoderName": "hevc_videotoolbox",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h265-main10-osx",
+    "encoder": "H265",
+    "profile": "Main10",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "gpu": "appleIntel",
+    "autoBitsPerPixel": "1.0",
+    "maxBitRate": 2000,
+    "os": "osx",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "doNotScaleFullColorRange": "always",
+    "encoderOpts": {
+      "profile:v": "main10",
+      "allow_sw": "1",
+      "g": "30"
+    },
+    "pixFmt": "p010le",
+    "encoderName": "hevc_videotoolbox",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h264-high-win-amd",
+    "encoder": "H264",
+    "profile": "High",
+    "allowsAlpha": 0,
+    "gpu": "amd",
+    "bitrateOpts": {
+      "cbr": {
+        "b:v": "<CONST_BITRATE_VALUE>"
+      },
+      "vbr": {
+        "b:v": "0",
+        "quality": "0",
+        "rc": "cqp",
+        "qp_i": "<QPI_VALUE>",
+        "qp_p": "<QPP_VALUE>",
+        "qp_b": "<QPB_VALUE>"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        19,
+        20,
+        20
+      ],
+      "Mid": [
+        20,
+        23,
+        23
+      ],
+      "Low": [
+        28,
+        30,
+        30
+      ]
+    },
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "maxBitRate": 2000,
+    "os": "windows",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      4096,
+      4096
+    ],
+    "device": "amd|radeon",
+    "encoderOpts": {
+      "profile:v": "high",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "h264_amf"
+  },
+  {
+    "id": "h265-main-win-amd",
+    "encoder": "H265",
+    "profile": "Main",
+    "allowsAlpha": 0,
+    "gpu": "amd",
+    "bitrateOpts": {
+      "cbr": {
+        "b:v": "<CONST_BITRATE_VALUE>"
+      },
+      "vbr": {
+        "b:v": "0",
+        "quality": "0",
+        "rc": "cqp",
+        "qp_i": "<QPI_VALUE>",
+        "qp_p": "<QPP_VALUE>"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        17,
+        19
+      ],
+      "Mid": [
+        20,
+        23
+      ],
+      "Low": [
+        28,
+        30
+      ]
+    },
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "maxBitRate": 2000,
+    "os": "windows",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      8192,
+      4320
+    ],
+    "device": "amd|radeon",
+    "encoderOpts": {
+      "profile:v": "main",
+      "profile_tier": "main",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "hevc_amf",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h265-high-win-amd",
+    "encoder": "H265",
+    "profile": "High",
+    "allowsAlpha": 0,
+    "gpu": "amd",
+    "bitrateOpts": {
+      "cbr": {
+        "b:v": "<CONST_BITRATE_VALUE>"
+      },
+      "vbr": {
+        "b:v": "0",
+        "quality": "0",
+        "rc": "cqp",
+        "qp_i": "<QPI_VALUE>",
+        "qp_p": "<QPP_VALUE>"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        17,
+        19
+      ],
+      "Mid": [
+        20,
+        23
+      ],
+      "Low": [
+        28,
+        30
+      ]
+    },
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "maxBitRate": 2000,
+    "os": "windows",
+    "minSize": [
+      2,
+      2
+    ],
+    "maxSize": [
+      8192,
+      4320
+    ],
+    "device": "amd|radeon",
+    "encoderOpts": {
+      "profile:v": "main",
+      "profile_tier": "high",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "hevc_amf",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h264-main-win-nvidia",
+    "encoder": "H264",
+    "profile": "High",
+    "allowsAlpha": 0,
+    "gpu": "nvidia",
+    "bitrateOpts": {
+      "cbr": {
+        "rc": "cbr",
+        "b:v": "<CONST_BITRATE_VALUE>",
+        "preset": "p6"
+      },
+      "vbr": {
+        "preset": "p7",
+        "tune": "hq",
+        "rc": "constqp",
+        "qp": "<QP_VALUE>",
+        "rc-lookahead": "20",
+        "spatial_aq": "1",
+        "aq-strength": "15",
+        "b:v": "0"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        18
+      ],
+      "Mid": [
+        25
+      ],
+      "Low": [
+        28
+      ]
+    },
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "maxBitRate": 2000,
+    "os": "windows|linux",
+    "device": "nvidia|tesla",
+    "minSize": [
+      145,
+      145
+    ],
+    "maxSize": [
+      4096,
+      4096
+    ],
+    "maxBitDepth": 8,
+    "encoderOpts": {
+      "profile:v": "high",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "h264_nvenc"
+  },
+  {
+    "id": "h265-main-win-nvidia",
+    "encoder": "H265",
+    "profile": "Main",
+    "allowsAlpha": 0,
+    "gpu": "nvidia",
+    "bitrateOpts": {
+      "cbr": {
+        "rc": "cbr",
+        "b:v": "<CONST_BITRATE_VALUE>",
+        "preset": "p6"
+      },
+      "vbr": {
+        "preset": "p7",
+        "tune": "hq",
+        "rc": "constqp",
+        "qp": "<QP_VALUE>",
+        "rc-lookahead": "20",
+        "spatial_aq": "1",
+        "aq-strength": "15",
+        "b:v": "0"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        17
+      ],
+      "Mid": [
+        25
+      ],
+      "Low": [
+        28
+      ]
+    },
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "maxBitRate": 2000,
+    "os": "windows|linux",
+    "device": "nvidia|tesla",
+    "minSize": [
+      129,
+      129
+    ],
+    "maxSize": [
+      8192,
+      8192
+    ],
+    "maxBitDepth": 12,
+    "encoderOpts": {
+      "profile:v": "main",
+      "b_ref_mode": "disabled",
+      "g": "30"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "hevc_nvenc",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h265-main10-win-nvidia",
+    "encoder": "H265",
+    "profile": "Main10",
+    "allowsAlpha": 0,
+    "gpu": "nvidia",
+    "bitrateOpts": {
+      "cbr": {
+        "rc": "cbr",
+        "b:v": "<CONST_BITRATE_VALUE>",
+        "preset": "p6"
+      },
+      "vbr": {
+        "preset": "p7",
+        "tune": "hq",
+        "rc": "constqp",
+        "qp": "<QP_VALUE>",
+        "rc-lookahead": "20",
+        "spatial_aq": "1",
+        "aq-strength": "15",
+        "b:v": "0"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        17
+      ],
+      "Mid": [
+        25
+      ],
+      "Low": [
+        28
+      ]
+    },
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "maxBitRate": 2000,
+    "os": "windows|linux",
+    "device": "nvidia|tesla",
+    "minSize": [
+      129,
+      129
+    ],
+    "maxSize": [
+      8192,
+      8192
+    ],
+    "maxBitDepth": 12,
+    "encoderOpts": {
+      "profile:v": "main10",
+      "b_ref_mode": "disabled",
+      "g": "30"
+    },
+    "pixFmt": "p010le",
+    "encoderName": "hevc_nvenc",
+    "tag": "hvc1"
+  },
+  {
+    "id": "h264-high-win-intel",
+    "encoder": "H264",
+    "profile": "High",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "autoBitsPerPixel": "1.0",
+    "maxBitRate": 2000,
+    "os": "windows",
+    "device": "intel",
+    "minSize": [
+      17,
+      17
+    ],
+    "maxSize": [
+      3840,
+      2160
+    ],
+    "encoderOpts": {
+      "profile:v": "high",
+      "preset": "medium",
+      "max_frame_size": "65534",
+      "g": "30"
+    },
+    "pixFmt": "nv12",
+    "encoderName": "h264_qsv"
+  },
+  {
+    "id": "h265-main-win-intel",
+    "encoder": "H265",
+    "profile": "Main",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "autoBitsPerPixel": "0.8",
+    "maxBitRate": 2000,
+    "os": "windows",
+    "device": "intel",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "encoderOpts": {
+      "profile:v": "main",
+      "preset": "medium",
+      "max_frame_size": "65534",
+      "g": "30"
+    },
+    "pixFmt": "nv12",
+    "encoderName": "hevc_qsv"
+  },
+  {
+    "id": "h265-main10-win-intel",
+    "encoder": "H265",
+    "profile": "Main10",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "mp4"
+    ],
+    "autoBitsPerPixel": "1.0",
+    "maxBitRate": 2000,
+    "os": "windows",
+    "device": "intel",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "encoderOpts": {
+      "profile:v": "main10",
+      "preset": "medium",
+      "max_frame_size": "65534",
+      "g": "30"
+    },
+    "pixFmt": "p010le",
+    "encoderName": "hevc_qsv"
+  },
+  {
+    "id": "av1-win-nvidia",
+    "encoder": "AV1",
+    "profile": "8-bit",
+    "allowsAlpha": 0,
+    "gpu": "nvidia",
+    "bitrateOpts": {
+      "cbr": {
+        "rc": "cbr",
+        "b:v": "<CONST_BITRATE_VALUE>",
+        "preset": "p7"
+      },
+      "vbr": {
+        "preset": "p7",
+        "tune": "hq",
+        "cq": "<QP_VALUE>",
+        "rc-lookahead": "20",
+        "spatial_aq": "1",
+        "aq-strength": "1",
+        "b:v": "0"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        23
+      ],
+      "Mid": [
+        31
+      ],
+      "Low": [
+        40
+      ]
+    },
+    "ext": [
+      "mkv",
+      "webm",
+      "mp4"
+    ],
+    "os": "windows|linux",
+    "device": "nvidia",
+    "maxBitRate": 800,
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16384,
+      8704
+    ],
+    "maxBitDepth": 12,
+    "compute": 809,
+    "encoderOpts": {
+      "preset": "p7"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "av1_nvenc"
+  },
+  {
+    "id": "av1-10bit-win-nvidia",
+    "encoder": "AV1",
+    "profile": "10-bit",
+    "allowsAlpha": 0,
+    "gpu": "nvidia",
+    "bitrateOpts": {
+      "cbr": {
+        "rc": "cbr",
+        "b:v": "<CONST_BITRATE_VALUE>",
+        "preset": "p7"
+      },
+      "vbr": {
+        "preset": "p7",
+        "tune": "hq",
+        "cq": "<QP_VALUE>",
+        "rc-lookahead": "20",
+        "spatial_aq": "1",
+        "aq-strength": "1",
+        "b:v": "0"
+      }
+    },
+    "cqpValues": {
+      "High": [
+        20
+      ],
+      "Mid": [
+        28
+      ],
+      "Low": [
+        33
+      ]
+    },
+    "ext": [
+      "mkv",
+      "webm",
+      "mp4"
+    ],
+    "os": "windows|linux",
+    "device": "nvidia",
+    "maxBitRate": 800,
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16384,
+      8704
+    ],
+    "maxBitDepth": 12,
+    "compute": 809,
+    "encoderOpts": {
+      "preset": "p7"
+    },
+    "pixFmt": "p010le",
+    "encoderName": "av1_nvenc"
+  },
+  {
+    "id": "av1-win-amd",
+    "encoder": "AV1",
+    "allowsAlpha": 0,
+    "gpu": "amd",
+    "ext": [
+      "mkv",
+      "webm",
+      "mp4"
+    ],
+    "os": "windows",
+    "device": ".*radeon.*\\b[7-9][0-9]{3}\\b.*",
+    "maxBitRate": 800,
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16384,
+      8704
+    ],
+    "maxBitDepth": 12,
+    "encoderOpts": {
+      "profile:v": "main",
+      "quality:v": "balanced"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "av1_amf"
+  },
+  {
+    "id": "av1-win-arc",
+    "encoder": "AV1",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "webm",
+      "mp4"
+    ],
+    "maxBitRate": 800,
+    "os": "windows",
+    "device": "arc",
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      16384,
+      8704
+    ],
+    "maxBitDepth": 12,
+    "encoderOpts": {
+      "profile:v": "main",
+      "preset": "4"
+    },
+    "pixFmt": "nv12",
+    "encoderName": "av1_qsv"
+  },
+  {
+    "id": "ffv1-8bit-420",
+    "encoder": "FFV1",
+    "profile": "8-bit 4:2:0",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-10bit-420",
+    "encoder": "FFV1",
+    "profile": "10-bit 4:2:0",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv420p10le",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-12bit-420",
+    "encoder": "FFV1",
+    "profile": "12-bit 4:2:0",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv420p12le",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-8bit-422",
+    "encoder": "FFV1",
+    "profile": "8-bit 4:2:2",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv422p",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-10bit-422",
+    "encoder": "FFV1",
+    "profile": "10-bit 4:2:2",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv422p10le",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-12bit-422",
+    "encoder": "FFV1",
+    "profile": "12-bit 4:2:2",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv422p12le",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-8bit-444",
+    "encoder": "FFV1",
+    "profile": "8-bit 4:4:4",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv444p",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-10bit-444",
+    "encoder": "FFV1",
+    "profile": "10-bit 4:4:4",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv444p10le",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "ffv1-12bit-444",
+    "encoder": "FFV1",
+    "profile": "12-bit 4:4:4",
+    "allowsAlpha": 0,
+    "ext": [
+      "mkv",
+      "mov",
+      "avi"
+    ],
+    "encoderOpts": {
+      "level": "3",
+      "slices": "4",
+      "slicecrc": "1",
+      "g": "1"
+    },
+    "pixFmt": "yuv444p12le",
+    "encoderName": "ffv1"
+  },
+  {
+    "id": "vp9-good",
+    "encoder": "VP9",
+    "profile": "Good",
+    "allowsAlpha": 0,
+    "ext": [
+      "mp4",
+      "mkv",
+      "webm"
+    ],
+    "maxBitRate": 2000,
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "maxBitDepth": 12,
+    "encoderOpts": {
+      "strict": "experimental",
+      "row-mt": "1",
+      "deadline": "good"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "libvpx-vp9"
+  },
+  {
+    "id": "vp9-best",
+    "encoder": "VP9",
+    "profile": "Best",
+    "allowsAlpha": 0,
+    "ext": [
+      "mp4",
+      "mkv",
+      "webm"
+    ],
+    "maxBitRate": 2000,
+    "minSize": [
+      1,
+      1
+    ],
+    "maxSize": [
+      15360,
+      8640
+    ],
+    "maxBitDepth": 12,
+    "encoderOpts": {
+      "strict": "experimental",
+      "row-mt": "1",
+      "deadline": "best"
+    },
+    "pixFmt": "yuv420p",
+    "encoderName": "libvpx-vp9"
+  },
+  {
+    "id": "QuickTime-v210",
+    "encoder": "QuickTime V210",
+    "shortName": "QT V210",
+    "profile": "Uncompressed YUV 10-bit 4:2:2",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "avi"
+    ],
+    "encoderOpts": {},
+    "pixFmt": "yuv422p10le",
+    "encoderName": "v210"
+  },
+  {
+    "id": "QuickTime-r210",
+    "encoder": "QuickTime R210",
+    "shortName": "QT R210",
+    "profile": "Uncompressed RGB 10-bit",
+    "allowsAlpha": 0,
+    "ext": [
+      "mov",
+      "mkv",
+      "avi"
+    ],
+    "encoderOpts": {},
+    "pixFmt": "gbrp10le",
+    "encoderName": "r210"
+  },
+  {
+    "id": "QTRLE",
+    "encoder": "QuickTime Animation",
+    "shortName": "QT Animation",
+    "profile": "Run-length compressed RGB 8-bit",
+    "allowsAlpha": 1,
+    "ext": [
+      "mov"
+    ],
+    "encoderOpts": {},
+    "pixFmt": "rgb24",
+    "encoderName": "qtrle"
+  },
+  {
+    "id": "tiff-8bit",
+    "encoder": "TIFF",
+    "profile": "8-bit",
+    "allowsAlpha": 1,
+    "ext": [
+      "tiff"
+    ],
+    "isImage": true,
+    "encoderOpts": {
+      "compression_algo": "deflate"
+    },
+    "pixFmt": "rgb24",
+    "encoderName": "tiff"
+  },
+  {
+    "id": "tiff-16bit",
+    "encoder": "TIFF",
+    "profile": "16-bit",
+    "allowsAlpha": 1,
+    "ext": [
+      "tiff"
+    ],
+    "isImage": true,
+    "encoderOpts": {
+      "compression_algo": "deflate"
+    },
+    "pixFmt": "rgb48le",
+    "encoderName": "tiff"
+  },
+  {
+    "id": "png-8bit",
+    "encoder": "PNG",
+    "profile": "8-bit",
+    "allowsAlpha": 1,
+    "ext": [
+      "png"
+    ],
+    "isImage": true,
+    "encoderOpts": {},
+    "pixFmt": "rgb24",
+    "encoderName": "png"
+  },
+  {
+    "id": "png-16bit",
+    "encoder": "PNG",
+    "profile": "16-bit",
+    "allowsAlpha": 1,
+    "ext": [
+      "png"
+    ],
+    "isImage": true,
+    "encoderOpts": {},
+    "pixFmt": "rgb48be",
+    "encoderName": "png"
+  },
+  {
+    "id": "jpeg-8bit",
+    "encoder": "JPEG",
+    "profile": "8-bit",
+    "allowsAlpha": 0,
+    "ext": [
+      "jpg"
+    ],
+    "isImage": true,
+    "encoderOpts": {
+      "q:v": "2"
+    },
+    "pixFmt": "rgb24",
+    "encoderName": "mjpeg"
+  },
+  {
+    "id": "exr",
+    "encoder": "EXR",
+    "allowsAlpha": 0,
+    "ext": [
+      "exr"
+    ],
+    "isImage": true,
+    "encoderOpts": {
+      "q:v": "2"
+    },
+    "pixFmt": "gbrapf32le",
+    "encoderName": "exr"
+  },
+  {
+    "id": "dpx-10",
+    "encoder": "DPX",
+    "allowsAlpha": 0,
+    "profile": "10-bit",
+    "ext": [
+      "dpx"
+    ],
+    "isImage": true,
+    "encoderOpts": {},
+    "pixFmt": "gbrp10le",
+    "encoderName": "dpx"
+  },
+  {
+    "id": "dpx-12",
+    "encoder": "DPX",
+    "allowsAlpha": 0,
+    "profile": "12-bit",
+    "ext": [
+      "dpx"
+    ],
+    "isImage": true,
+    "encoderOpts": {},
+    "pixFmt": "gbrp12le",
+    "encoderName": "dpx"
+  }
+]
