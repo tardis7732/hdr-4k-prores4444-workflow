@@ -9,17 +9,17 @@ if ([IO.Path]::GetFullPath($TargetPath) -eq $expectedDefault) {
         throw 'Run this installer from an Administrator PowerShell window.'
     }
     if (Get-Process -Name 'Topaz Video' -ErrorAction SilentlyContinue) {
-        throw 'Close Topaz Video before applying the encoder profile.'
+        Write-Warning 'Restart Topaz Video after current exports finish to load the updated profile.'
     }
 }
 $target = (Resolve-Path -LiteralPath $TargetPath).ProviderPath
-$entry = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'prores-4444-rec709-entry.json') -Raw -Encoding UTF8 | ConvertFrom-Json
-if ($entry.id -ne 'prores-4444-rec709-win' -or $entry.pixFmt -ne 'yuv444p10le' -or $entry.encoderName -ne 'prores_ks') { throw 'Unexpected encoder entry.' }
+$entry = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'prores-4444-entry.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+if ($entry.id -ne 'prores-4444-win' -or $entry.pixFmt -ne 'yuv444p10le' -or $entry.encoderName -ne 'prores_ks') { throw 'Unexpected encoder entry.' }
 $original = @(Get-Content -LiteralPath $target -Raw -Encoding UTF8 | ConvertFrom-Json)
 $updated = [Collections.Generic.List[object]]::new()
 $inserted = $false
 foreach ($item in $original) {
-    if ($item.id -eq $entry.id) {
+    if ($item.id -eq $entry.id -or $item.id -eq 'prores-4444-rec709-win') {
         if (-not $inserted) {$updated.Add($entry); $inserted = $true}
         continue
     }

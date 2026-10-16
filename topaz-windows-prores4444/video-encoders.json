@@ -112,9 +112,9 @@
     "encoderName": "prores_ks"
   },
   {
-    "id": "prores-4444-rec709-win",
+    "id": "prores-4444-win",
     "encoder": "ProRes",
-    "profile": "4444 Rec.709",
+    "profile": "4444",
     "allowsAlpha": 0,
     "ext": [
       "mov"
@@ -134,11 +134,6 @@
       "profile:v": "4",
       "vendor": "Lavc",
       "alpha_bits": "0",
-      "color_range": "tv",
-      "color_primaries": "bt709",
-      "color_trc": "bt709",
-      "colorspace": "bt709",
-      "bsf:v": "prores_metadata=color_primaries=bt709:color_trc=bt709:colorspace=bt709",
       "movflags": "+faststart+write_colr",
       "tag:v": "ap4h"
     },
